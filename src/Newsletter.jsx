@@ -6,8 +6,7 @@ const Newsletter = () => {
   const [validation, setValidation] = useState("");
   const [error, setError] = useState("");
 
-  const inputPattern =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const inputPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   function checkInput(e) {
     e.preventDefault();
